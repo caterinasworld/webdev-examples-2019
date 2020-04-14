@@ -1,0 +1,38 @@
+* {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+div {
+  font-size: 3em;
+}
+
+div {
+  box-sizing: border-box;
+  width: 600px;
+  height: 600px;
+  /* width: 80%; */
+  color: #fefefe;
+  background-color: rebeccapurple;
+  font-size: 1.5rem;
+
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding: 20px;
+  /* padding: 10px 20px 30px 40px; */
+  padding: 20px 30px;
+
+  border: 10px dashed rgb(179, 179, 230);
+  border-radius: 10px;
+
+  /* margin: 10px auto; */
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
