@@ -1,0 +1,50 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.main {
+  padding: 5px 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-radius: 6px;
+  width: 6em;
+  height: 2em;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: purple;
+    color: white;
+    font-size: 1em;
+  }
+  button:hover {
+    background: lavender;
+    color: black;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    background: orange;
+  }
+  button:hover {
+    background: khaki;
+    color: black;
+  }
+}
+
+@media (min-width: 901px) {
+  body {
+    background: darkgreen;
+    color: white;
+  }
+  button:hover {
+    background: lightgreen;
+    color: black;
+  }
+}
