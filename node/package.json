@@ -1,0 +1,19 @@
+{
+  "name": "node-express-examples",
+  "version": "1.0.0",
+  "description": "Project folder with Node.js examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "node 01-hello-world.js",
+    "dev": "nodemon 02-response.js"
+  },
+  "author": "Caterina Paun",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-static": "^0.7.11"
+  }
+}
