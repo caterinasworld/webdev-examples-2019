@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Form Example</title>
+  </head>
+  <body>
+    <form action>
+      <h2>HTML Form Example</h2>
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Full Name" />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="name@pdx.edu" />
+      </div>
+      <div>
+        <p>Favorite Character?</p>
+        <div>
+          <input
+            type="radio"
+            id="spongebob"
+            name="character"
+            value="spongebob"
+            checked
+          />
+          <label for="spongebob">Spongebob</label>
+        </div>
+        <div>
+          <input type="radio" id="sandy" name="character" value="sandy" />
+          <label for="sandy">Sandy</label>
+        </div>
+        <div>
+          <input type="radio" id="patrick" name="character" value="patrick" />
+          <label for="patrick">Patrick</label>
+        </div>
+      </div>
+      <br />
+      <div>
+        <p>Are you a fan of the show?</p>
+        <div>
+          <input type="checkbox" id="fan" name="fan" checked />
+          <label for="fan">Yes, I have watched all episodes!</label>
+        </div>
+        <div>
+          <input type="checkbox" id="nofan" name="nofan" />
+          <label for="nofan">Not really</label>
+        </div>
+      </div>
+      <br />
+      <div>
+        <button>Submit</button>
+        <button>Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
