@@ -12,7 +12,7 @@ let fetchData = (url) => {
       data.forEach((item) => {
         console.log(item);
         let div = document.createElement('div');
-        div.innerHTML = `${item.name} - ${item.numberOfPages} pages`;
+        div.innerText = `${item.name} - ${item.numberOfPages} pages`;
         app.append(div);
       });
     })
