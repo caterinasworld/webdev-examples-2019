@@ -1,24 +1,30 @@
 const url = 'https://anapioficeandfire.com/api/books/';
 
 let app = document.querySelector('#books');
+let loading = document.querySelector('#loading');
 
-console.log('test');
+let addToDOM = (element, item) => {
+  let li = document.createElement(element);
+  li.innerText = `${item.name} - ${item.numberOfPages} pages`;
+  li.setAttribute('style', 'font-size: 1.2em;');
+  li.setAttribute('class', 'list-item');
+  app.append(li);
+};
 
 let fetchData = (url) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data); // array of 10 objects
       data.forEach((item) => {
-        console.log(item);
-        let div = document.createElement('div');
-        div.innerText = `${item.name} - ${item.numberOfPages} pages`;
-        app.append(div);
+        addToDOM('li', item);
       });
     })
-    .catch((error) => console.log(error))
+    .catch((error) => {
+      console.log(error);
+      app.append();
+    })
     .finally(() => {
-      app.removeChild(document.querySelector('#loading'));
+      app.removeChild(loading);
     });
 };
 
