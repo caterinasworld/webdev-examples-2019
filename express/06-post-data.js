@@ -6,7 +6,7 @@ const port = 5000;
 app.use(
   parser.urlencoded({
     extended: false,
-    limit: 1024
+    limit: 1024,
   })
 );
 
@@ -25,7 +25,8 @@ app.get('/form', (req, res) => {
 
 app.post('/submit', (req, res) => {
   console.log(req.body);
-  console.log(req.body.name, req.body.email);
+  console.log(`Name: ${req.body.name}`);
+  console.log(`Email: ${req.body.email}`);
   res.end();
 });
 
