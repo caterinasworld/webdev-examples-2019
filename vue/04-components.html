@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Exercise</title>
+  </head>
+  <body>
+    <!-- All examples are adjusted from Vue.js Docs: https://vuejs.org/v2/guide/# -->
+    <div id="app">
+      <h3>Example - Create a Component and Populate with Data</h3>
+      <ol>
+        <Book
+          v-for="item in books"
+          v-bind:book="item"
+          v-bind:key="item.id"
+        ></Book>
+      </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="04-components.js"></script>
+  </body>
+</html>
