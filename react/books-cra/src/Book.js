@@ -10,5 +10,5 @@ export default function Book(props) {
     );
   });
 
-  return <ol>{list}</ol>;
+  return <ol className='booklist'>{list}</ol>;
 }
