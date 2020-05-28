@@ -8,14 +8,12 @@ server.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/01-hello.html');
+  res.sendFile(__dirname + '/02-timestamp.html');
 });
 
-io.on('connection', (socket) => {
-  socket.emit('hello', {
-    hello: 'world',
+setInterval(() => {
+  io.emit('message', {
+    timestamp: new Date().getTime(),
+    message: Math.random().toString(36).substring(2, 12),
   });
-  socket.on('goodbye', (data) => {
-    console.log(data);
-  });
-});
+}, 3000);

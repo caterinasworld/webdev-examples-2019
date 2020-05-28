@@ -8,7 +8,7 @@
   <body>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-      const socket = io.connect('http://localhost');
+      const socket = io.connect('http://localhost:5000');
 
       socket.on('hello', (data) => {
         console.log(data);
