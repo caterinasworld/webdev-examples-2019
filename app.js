@@ -3,7 +3,7 @@ const app = express();
 const port = 5000;
 
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
@@ -19,5 +19,5 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`listening on port ${port}`);
+  console.log(`listening on port http://localhost:${port}`);
 });

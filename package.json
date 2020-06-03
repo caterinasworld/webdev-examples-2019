@@ -1,7 +1,7 @@
 {
   "name": "express-site",
   "version": "1.0.0",
-  "description": "Simple site with Express and Jade",
+  "description": "Simple site with Express and Pug",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "jade": "^1.11.0"
+    "pug": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
