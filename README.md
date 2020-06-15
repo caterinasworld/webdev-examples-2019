@@ -1,4 +1,4 @@
-### Express Site with Jade Templating
+### Express Site with Pug Templating
 
 1. Download the project
 
