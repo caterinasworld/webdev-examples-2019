@@ -1,0 +1,43 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.2em;
+}
+
+/* style selectors for first exercise */
+
+li[class~='dog'] {
+  color: magenta;
+}
+
+li[id^='c'] {
+  color: teal;
+}
+
+li[class*='do'] {
+  color: royalblue;
+}
+
+li[class$='g'] {
+  color: darkviolet;
+}
+
+/* style selectors for second exercise */
+
+section li {
+  color: green;
+}
+
+.list-food > div {
+  font-weight: bold;
+}
+
+.first ~ li {
+  color: darkmagenta;
+}
+
+.second + li {
+  color: royalblue;
+}
