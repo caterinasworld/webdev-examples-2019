@@ -7,21 +7,25 @@
     <title>HTML Input Elements Example</title>
   </head>
   <body>
-    <section>
-      <h2>HTML Input Elements Example</h2>
+    <main>
+      <h1>HTML Input Elements Example</h1>
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" id="name" name="name" required />
       <br /><br />
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" />
+      <input type="email" id="email" name="email" required />
       <br /><br />
       <label for="mobile">Mobile</label>
-      <input type="tel" id="mobile" name="mobile" />
-      <br /><br />
-      <label for="telephone">Telephone:</label>
-      <input type="tel" id="telephone" name="telephone" />
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="123-456-7890"
+        required
+      />
       <br /><br />
       <input type="button" value="Submit" />
-    </section>
+    </main>
   </body>
 </html>
