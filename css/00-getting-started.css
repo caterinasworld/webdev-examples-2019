@@ -2,8 +2,13 @@
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 div {
-  width: 400px;
+  width: 40vw;
+  height: 50vh;
   margin: 10px auto;
   border: 10px dashed rgb(179, 179, 230);
   border-radius: 10px;
@@ -19,7 +24,6 @@ div {
 
   background-color: rebeccapurple;
   color: #fefefe;
-  font-size: 1.5rem;
 }
 
 /* Display: none example  */
@@ -30,6 +34,10 @@ div {
 }
 
 /* Size units: em vs rem */
+div {
+  font-size: 1.5rem;
+}
+
 p {
   font-size: 1.5rem;
 }
