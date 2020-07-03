@@ -3,8 +3,8 @@
   font-size: 1.2em;
 }
 
-.main {
-  padding: 5px 20px;
+main {
+  padding: 0.5em;
 }
 
 button {
@@ -16,35 +16,43 @@ button {
   height: 2em;
 }
 
-@media (max-width: 600px) {
+button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+@media (max-width: 414px) {
   body {
     background: purple;
     color: white;
     font-size: 1em;
   }
   button:hover {
-    background: lavender;
+    background: linear-gradient(to right, plum, lightcoral);
     color: black;
+  }
+  h1 {
+    color: lavender;
   }
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 415px) and (max-width: 768px) {
   body {
     background: orange;
   }
   button:hover {
-    background: khaki;
+    background: linear-gradient(to right, darkgoldenrod, chocolate);
     color: black;
   }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 769px) {
   body {
     background: darkgreen;
     color: white;
   }
   button:hover {
-    background: lightgreen;
+    background: linear-gradient(to right, lightskyblue, lightgreen);
     color: black;
   }
 }
