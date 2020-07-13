@@ -15,6 +15,6 @@
 
 .flex-container {
   display: flex;
-  flex-flow: row-reverse wrap;
-  align-items: flex-end;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
 }

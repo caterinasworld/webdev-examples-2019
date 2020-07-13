@@ -5,7 +5,7 @@
 }
 
 .flex-item {
-  width: 200px;
+  width: 400px;
   height: 200px;
   background-color: purple;
   color: white;
@@ -14,7 +14,7 @@
 }
 
 .flex-container {
+  height: 800px;
   display: flex;
-  flex-flow: row-reverse wrap;
-  align-items: flex-end;
+  flex-flow: column wrap;
 }

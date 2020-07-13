@@ -15,6 +15,16 @@
 
 .flex-container {
   display: flex;
-  flex-flow: row-reverse wrap;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.item1,
+.item3,
+.item6 {
+  height: 300px;
+}
+
+.item2,
+.item8 {
+  height: 400px;
 }
