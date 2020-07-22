@@ -1,9 +1,13 @@
 const http = require('http');
 
+// create the server object
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.write('<h2>Hello World, Node!</h2>');
-  res.end();
+  res.writeHead(200, { 'Content-Type': 'text/plain' }); // response headers
+  res.write('Hello World, Node!'); // write a response to the client
+  res.end(); // end the response
 });
 
-server.listen(5000, () => console.log(`Server running...`));
+// set the server to listen on port 5000
+server.listen(5000, () => {
+  console.log(`Server running at http://localhost:5000`);
+});
