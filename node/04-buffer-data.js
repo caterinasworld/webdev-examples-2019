@@ -7,6 +7,9 @@ const server = http.createServer((req, res) => {
     fs.readFile('lorem.txt', (err, data) => {
       if (err) {
         console.log(err);
+        res.writeHead(404, 'Not Found');
+        res.write('404: File Not Found!');
+        res.end();
         return;
       }
       console.log('\n====== data buffer: ======\n', data);
