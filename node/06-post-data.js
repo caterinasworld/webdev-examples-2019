@@ -15,9 +15,10 @@ const server = http.createServer((req, res) => {
   let body = '';
   req.on('data', (chunk) => {
     body += chunk;
+    console.log('on data: ' + body);
   });
   req.on('end', () => {
-    console.log('POST body: ' + body);
+    console.log('on end: ' + body);
     res.writeHead(200);
     res.end(postHTML);
   });

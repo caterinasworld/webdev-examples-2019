@@ -3,10 +3,24 @@ const static = require('node-static');
 const http = require('http');
 const port = 5000 || process.env.PORT;
 
-const file = new static.Server();
+// static files are in the public/ directory
+const file = new static.Server('./public');
 
 const server = http.createServer((req, res) => {
-  file.serve(req, res);
+  // main route
+  if (req.url === '/') {
+    console.log(`${req.method} - ${req.url}`);
+
+    // serve index.html without specifying the file name
+    file.serve(req, res);
+  }
+  // new route --> handle 404
+  else {
+    console.log(`${req.method} - ${req.url}`);
+
+    // server other files by specifying their names
+    file.serveFile('/error.html', 404, {}, req, res);
+  }
 });
 
 server.listen(port, () => {
