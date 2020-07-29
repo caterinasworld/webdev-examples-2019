@@ -1,11 +1,11 @@
 // All examples are adjusted from the Vue.js Docs: https://vuejs.org/v2/guide/#
-let app = new Vue({
+var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello There?',
+    message: 'Hello World, Vue!',
   },
   methods: {
-    reverse: () => {
+    reverse: function () {
       this.message = this.message.split('').reverse().join('');
     },
   },
