@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Socket.IO Example</title>
+    <title>Socket.IO Timestamp Example</title>
   </head>
   <body>
     <div id="app"></div>
@@ -13,7 +13,7 @@
 
       socket.on('message', (data) => {
         let div = document.createElement('div');
-        div.textContent = `Timestamp: ${data.timestamp} - Secret Message: ${data.message}`;
+        div.textContent = `Timestamp: ${data.timestamp} - Secret Code: ${data.message}`;
         document.querySelector('#app').append(div);
       });
     </script>

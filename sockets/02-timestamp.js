@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
 setInterval(() => {
   io.emit('message', {
     timestamp: new Date().getTime(),
-    message: Math.random().toString(36).substring(2, 12),
+    message: Math.floor(1000 + Math.random() * 9000),
   });
 }, 3000);
