@@ -1,0 +1,21 @@
+{
+  "name": "express-site",
+  "version": "1.0.0",
+  "description": "Simple site with Express and Pug",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Caterina Paun",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
