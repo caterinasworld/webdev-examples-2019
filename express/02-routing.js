@@ -3,6 +3,7 @@ const app = express();
 const port = 5000;
 
 app.get('/', (req, res) => {
+  res.status(200);
   res.set({ 'Content-Type': 'text/plain' });
   res.send('Hello World, Express!');
 });
@@ -14,6 +15,8 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
+  res.status(200);
+  res.set({ 'Content-Type': 'text/html' });
   res.send('This is the contact page');
 });
 
