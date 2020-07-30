@@ -2,34 +2,11 @@ const express = require('express');
 const app = express();
 const port = 5000;
 
-let characters = [
-  {
-    id: 1,
-    name: 'Luke Skywalker',
-  },
-  {
-    id: 4,
-    name: 'Darth Vader',
-  },
-  {
-    id: 5,
-    name: 'Leia Organa',
-  },
-  {
-    id: 14,
-    name: 'Han Solo',
-  },
-  {
-    id: 20,
-    name: 'Yoda',
-  },
-  {
-    id: 34,
-    name: 'Padmé Amidala',
-  },
-];
+const characters = require('./characters');
 
 app.get('/', (req, res) => {
+  // console.log(characters);
+
   let result = '';
 
   characters.forEach((elem) => {
@@ -49,7 +26,8 @@ app.get('/', (req, res) => {
 app.get('/:character', (req, res) => {
   res.status(200);
   res.set({ 'Content-Type': 'text/plain' });
-  res.send(`This is the ${req.params.character} page.`);
+  res.write(`This is the ${req.params.character} page.`);
+  res.end();
 });
 
 app.listen(port, () => {
