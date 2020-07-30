@@ -9,7 +9,7 @@
   "author": "Caterina Paun",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "cors": "^2.8.5",
