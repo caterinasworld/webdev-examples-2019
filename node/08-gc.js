@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
   let data = [];
   if (req.url === '/') {
     data.push(Array(100000).join('abc'));
-    console.log(data);
+    // console.log(data);
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('Hello World, Node!\n');
     res.end();
