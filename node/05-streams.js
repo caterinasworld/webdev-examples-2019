@@ -3,8 +3,10 @@ const fs = require('fs');
 const port = 5000 || process.env.PORT;
 
 const server = http.createServer((req, res) => {
-  const stream = fs.createReadStream('lorem.txt');
-  stream.pipe(res);
+  const readable = fs.createReadStream('lorem.txt');
+  const writeable = fs.createWriteStream('out.txt');
+  readable.pipe(writeable);
+  readable.pipe(res);
 });
 
 server.listen(port, () => {
