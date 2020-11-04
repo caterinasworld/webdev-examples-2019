@@ -1,6 +1,6 @@
 // example adapted from the Nodejs.org docs
 const http = require('http');
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
 
 const postHTML = `<html><head><title>Post Example</title></head><body>
   <form method='post'>
