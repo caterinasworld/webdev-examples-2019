@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
 
 const server = http.createServer((req, res) => {
   if (req.url === '/readfile') {
