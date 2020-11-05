@@ -26,6 +26,11 @@ div {
   color: #fefefe;
 }
 
+span {
+  width: 300px;
+  margin: 0 auto;
+}
+
 /* Display: none example  */
 /* Box-sizing: content-box vs border-box */
 .border-box {
