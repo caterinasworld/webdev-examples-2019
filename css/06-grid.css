@@ -4,16 +4,13 @@
   text-align: center;
 }
 
-.flex-item {
-  width: 200px;
-  height: 200px;
+.grid-item {
   background-color: purple;
   color: white;
-  margin: 10px;
   padding: 10px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
+.grid-container {
+  display: grid;
+  gap: 10px;
 }

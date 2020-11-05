@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
 }
 
@@ -38,7 +38,7 @@
   display: grid;
   height: 97vh;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   gap: 10px;
   grid-template-areas:
     'header'
@@ -47,8 +47,13 @@
     'main'
     'card1'
     'card2'
-    'card3'
     'footer';
+}
+
+@media (max-width: 415px) {
+  .card3 {
+    display: none;
+  }
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
