@@ -1,18 +1,24 @@
 const express = require('express');
-const app = express();
-const port = 5000;
-
 const characters = require('./characters');
 
-app.get('/', (req, res) => {
-  // console.log(characters);
+const app = express();
+const port = process.env.PORT || 5000;
 
+
+let getCharacters = () => {
   let result = '';
 
   characters.forEach((elem) => {
     console.log(elem.name);
     result += `<li><a href="/${elem.name}">${elem.name}</a><br></li>`;
   });
+
+  return result;
+}
+
+app.get('/', (req, res) => {
+
+  let result = getCharacters();
 
   res.status(200);
   res.set({ 'Content-Type': 'text/html' });
