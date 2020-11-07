@@ -1,0 +1,40 @@
+:root {
+  --teal: #008080;
+  --purple: #800080;
+  --orange: #dd7a02;
+  --navy: #000080;
+}
+
+.draggable {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+#first {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--teal);
+}
+
+#second {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  background-color: var(--purple);
+}
+
+#third {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  background-color: var(--orange);
+}
+
+#fourth {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  background-color: var(--navy);
+}

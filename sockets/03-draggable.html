@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.IO Game Example</title>
+    <link rel="stylesheet" type="text/css" href="03-draggable.css" />
+  </head>
+  <body>
+    <main>
+      <div id="first" class="draggable"></div>
+      <div id="second" class="draggable"></div>
+      <div id="third" class="draggable"></div>
+      <div id="fourth" class="draggable"></div>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+      const socket = io.connect('http://localhost:5000');
+
+      let current = null;
+      let deltaX;
+      let deltaY;
+
+      $('#first, #second, #third, #fourth').on('mousedown', function (event) {
+        if (event.which === 1) {
+          current = $(this).attr('id');
+          deltaX = event.pageX - $(this).offset().left;
+          deltaY = event.pageY - $(this).offset().top;
+        }
+      });
+
+      $(document)
+        .on('mousemove', function (event) {
+          if (current !== null) {
+            socket.emit('drag', {
+              boxId: current,
+              left: event.pageX - deltaX,
+              top: event.pageY - deltaY,
+            });
+          }
+        })
+        .on('mouseup', function (event) {
+          current = null;
+        });
+
+      socket.on('drag', function (data) {
+        $('#' + data.boxId).css({
+          position: 'absolute',
+          left: data.left + 'px',
+          top: data.top + 'px',
+        });
+      });
+    </script>
+  </body>
+</html>
