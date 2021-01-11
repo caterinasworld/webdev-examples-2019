@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  color: white;
+}
+
+.box {
+  padding: 10px;
+}
+
+.static {
+  background-color: darkviolet;
+}
+
+.relative {
+  background-color: purple;
+}
+
+.absolute {
+  background-color: maroon;
+}
+
+.fixed {
+  background-color: darkgoldenrod;
+}

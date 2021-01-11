@@ -1,0 +1,14 @@
+* {
+  font-family: sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}

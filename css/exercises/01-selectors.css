@@ -1,0 +1,19 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.2em;
+}
+
+/* style selectors for first exercise */
+
+li[class] {
+  color: crimson;
+}
+
+/* style selectors for second exercise */
+
+section li {
+  color: green;
+}

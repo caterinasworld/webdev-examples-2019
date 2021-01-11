@@ -1,0 +1,58 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+main {
+  padding: 0.5em;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-radius: 6px;
+  width: 6em;
+  height: 2em;
+}
+
+button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+@media (max-width: 414px) {
+  body {
+    background: purple;
+    color: white;
+    font-size: 1em;
+  }
+  button:hover {
+    background: linear-gradient(to right, plum, lightcoral);
+    color: black;
+  }
+  h1 {
+    color: lavender;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  body {
+    background: orange;
+  }
+  button:hover {
+    background: linear-gradient(to right, darkgoldenrod, chocolate);
+    color: black;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    background: darkgreen;
+    color: white;
+  }
+  button:hover {
+    background: linear-gradient(to right, lightskyblue, lightgreen);
+    color: black;
+  }
+}
