@@ -8,9 +8,7 @@
 
 /* Flex Container 3 */
 
-.flex-container-3 {
-  /* use height: 400px; */
-}
+/* use height: 400px; on the container */
 
 /* Flex Container 4 */
 
@@ -19,9 +17,7 @@
 /* Flex Container 6 */
 
 .flex-container-6 .flex-item {
-  /* use width: 400px; */
+  width: 400px;
 }
 
-.flex-container-6 {
-  /* use height: 300px; */
-}
+/* use height: 300px; on the container */
