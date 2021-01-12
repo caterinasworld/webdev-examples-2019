@@ -1,4 +1,4 @@
-## Webdev Examples
+## Web Development Examples
 
 This repository contains starter files and potential solutions to the class examples we go over.
 
@@ -8,7 +8,7 @@ This repository contains starter files and potential solutions to the class exam
 - JavaScript
 - Node
 - Express
-- Pug (Templates for Express)
+- Pug Templating Engine
 - React
 - TypeScript
 - Vue
