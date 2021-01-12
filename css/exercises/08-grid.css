@@ -1,16 +1,17 @@
-* {
-  font-family: sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.grid-item {
-  background-color: purple;
-  color: white;
-  padding: 10px;
-}
-
 .grid-container {
-  display: grid;
-  gap: 10px;
+  background-color: rgb(190, 190, 231);
 }
+
+/* Grid Container 1 */
+
+/* Grid Container 2 */
+
+/* use height: 400px; on the container */
+
+/* Grid Container 3 */
+
+/* use height: 400px; on the container */
+
+/* Grid Container 4 */
+
+/* use height: 600px; on the container */

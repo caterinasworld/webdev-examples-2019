@@ -1,19 +1,21 @@
-* {
-  font-family: sans-serif;
+/* CSS custom properties / CSS variables */
+
+:root {
+  --darkmagenta: #8b008b;
+  --magenta: #ff00ff;
+  --royalblue: #4169e1;
+  --teal: #008080;
+  --violet: #9400d3;
 }
 
-body {
-  font-size: 1.2em;
-}
-
-/* style selectors for first exercise */
+/* Use attribute selectors for the first part of the exercise */
 
 li[class] {
-  color: crimson;
+  color: var(--red);
 }
 
-/* style selectors for second exercise */
+/* Use descendant, child, and sibling selectors for the second part */
 
 section li {
-  color: green;
+  color: var(--green);
 }

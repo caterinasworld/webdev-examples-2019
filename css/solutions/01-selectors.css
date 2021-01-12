@@ -1,43 +1,42 @@
-* {
-  font-family: sans-serif;
+/* CSS custom properties / CSS variables */
+
+:root {
+  --magenta: #ff00ff;
+  --teal: #008080;
+  --royalblue: #4169e1;
+  --violet: #9400d3;
+  --green: #008000;
+  --magenta: #8b008b;
 }
 
-body {
-  font-size: 1.2em;
-}
-
-/* style selectors for first exercise */
+/* Attribute selectors */
 
 li[class~='dog'] {
-  color: magenta;
+  color: var(--magenta);
 }
 
 li[id^='c'] {
-  color: teal;
+  color: var(--teal);
 }
 
 li[class*='do'] {
-  color: royalblue;
+  color: var(--royalblue);
 }
 
 li[class$='g'] {
-  color: darkviolet;
+  color: var(--violet);
 }
 
-/* style selectors for second exercise */
+/* Parent and Sibiling selectors */
 
 section li {
-  color: green;
-}
-
-.list-food > div {
-  font-weight: bold;
+  color: var(--green);
 }
 
 .first ~ li {
-  color: darkmagenta;
+  color: var(--magenta);
 }
 
 .second + li {
-  color: royalblue;
+  color: var(--royalblue);
 }

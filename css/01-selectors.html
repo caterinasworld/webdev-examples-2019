@@ -4,40 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="01-selectors.css" />
   </head>
   <body>
-    <section>
-      <h2>Attribute Selectors</h2>
-      <ol>
-        <li class="dog">dog</li>
-        <li id="cat">cat</li>
-        <li class="parrot">parrot</li>
-        <li class="donkey">donkey</li>
-        <li class="hedgehog">hedgehog</li>
-        <li class="cat dog parrot">dog, a cat, and a parrot</li>
-      </ol>
-    </section>
-    <section>
-      <h2>Parent and Sibling Selectors</h2>
-      <div class="list-food">
-        <div>Shopping list for food supplies.</div>
-        <ol>
-          <li class="first">eggs</li>
-          <li class="second">flour</li>
-          <li>milk</li>
-          <li>coffee</li>
-        </ol>
-        <div><small>**if available, also get oatmeal</small></div>
-      </div>
-      <div class="list-cleaning">
-        <p>Shopping list for cleaning supplies.</p>
-        <ol>
-          <li>clorox wipes</li>
-          <li>gloves</li>
-          <li>masks</li>
-        </ol>
-      </div>
-    </section>
+    <main>
+      <table id="table">
+        <tr>
+          <th class="heading">Pepper Name</th>
+          <th class="heading">Scoville Heat Units</th>
+        </tr>
+        <tr>
+          <td>Resiniferatoxin</td>
+          <td>16,000,000,000</td>
+        </tr>
+        <tr>
+          <td>Tinyatoxin</td>
+          <td>5,300,000,000</td>
+        </tr>
+        <tr>
+          <td>Capsaicin</td>
+          <td>16,000,000</td>
+        </tr>
+        <tr>
+          <td>Dihydrocapsaicin</td>
+          <td>15,000,000</td>
+        </tr>
+        <tr>
+          <td>Nonivamide</td>
+          <td>9,200,000</td>
+        </tr>
+        <tr>
+          <td>Nordihydrocapsaicin</td>
+          <td>9,100,000</td>
+        </tr>
+        <tr>
+          <td>Homocapsaicin</td>
+          <td>8,600,000</td>
+        </tr>
+      </table>
+    </main>
   </body>
 </html>
