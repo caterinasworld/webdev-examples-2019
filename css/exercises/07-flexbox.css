@@ -1,14 +1,27 @@
-* {
-  font-family: sans-serif;
-  font-size: 1.3em;
-  text-align: center;
+.flex-container {
+  background-color: rgb(190, 190, 231);
 }
 
-.flex-item {
-  width: 100px;
-  height: 100px;
-  background-color: purple;
-  color: white;
-  margin: 10px;
-  padding: 10px;
+/* Flex Container 1 */
+
+/* Flex Container 2 */
+
+/* Flex Container 3 */
+
+.flex-container-3 {
+  /* use height: 400px; */
+}
+
+/* Flex Container 4 */
+
+/* Flex Container 5 */
+
+/* Flex Container 6 */
+
+.flex-container-6 .flex-item {
+  /* use width: 400px; */
+}
+
+.flex-container-6 {
+  /* use height: 300px; */
 }
