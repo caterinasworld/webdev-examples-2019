@@ -1,9 +1,7 @@
-* {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 2em;
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  color: var(--gray1);
 }
 
 div {
@@ -35,7 +33,7 @@ span {
 /* Box-sizing: content-box vs border-box */
 .border-box {
   display: none;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 /* Size units: em vs rem */

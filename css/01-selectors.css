@@ -1,19 +1,29 @@
-* {
-  font-family: sans-serif;
+:root {
+  --darkred: darkred;
 }
 
-body {
-  font-size: 1.2em;
+table,
+th,
+tr,
+td {
+  border: 1px solid var(--darkred);
 }
 
-/* style selectors for first exercise */
-
-li[class] {
-  color: crimson;
+th,
+td {
+  padding: 5px;
 }
 
-/* style selectors for second exercise */
+#table {
+  color: var(--darkred);
+}
 
-section li {
-  color: green;
+.heading {
+  background-color: var(--darkred);
+  color: var(--white);
+  text-align: left;
+}
+
+tr:hover {
+  background-color: rgba(139, 0, 0, 0.2);
 }
