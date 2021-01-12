@@ -1,33 +1,26 @@
-## HTML Exercises
+# HTML Exercises
 
-### Exercise 01 - Lists
+## Exercise 01 - Lists
 
-In this exercise, create:
+Recreate the snapshot below, ordered and unordered lists and an anchor element for navigation. 
 
-- a heading element
-- ordered and unordered elements
-- an anchor element for navigation
+<img src="../../assets/html-ex01-lists.png" width=600 alt="screenshot of a recipe to build using list elements">
 
-<img src="../../assets/html-ex01-lists.png" width=300>
+## Exercise 02 - Images
 
-### Exercise 02 - Images
-
-In this exercise, use:
-
-- Two images (200x150) from placekitten.com and place-puppy.com
-- Captions below the image using <figure> and <figcaption>
+Recreate the snapshot below, using two images (200x150) from [placekitten](http://placekitten.com/) and [placepuppy](https://place-puppy.com/). Make sure you add captions below the image using `figure` and `figcaption`.
   
-<img src="../../assets/html-ex02-images.png" width=300>
+<img src="../../assets/html-ex02-images.png" width=300 alt="screenshot of a page with figure and img elements">
 
-### Exercise 03 - Table
+## Exercise 03 - Table
 
-Create a <table>, using <thead> and <tbody>, as well as colspan and rowspan.
+Create a `table`, using `thead` and `tbody`, as well as colspan and rowspan.
 
-<img src="../../assets/html-ex03-table.png" width=300>
+<img src="../../assets/html-ex03-table.png" width=400 alt="screenshot of a table with spongebob information">
 
-### Exercise 04 - Form
+## Exercise 04 - Form
 
-This is a form that uses input type name, email, radio, and checkbox, as well as two buttons.
+Create a form that uses input elements of type name, email, radio, checkbox, and more.
 
-<img src="../../assets/html-ex04-form.png" width=300>
+<img src="../../assets/html-ex04-form.png" width=400 alt="screenshot of a form">
 
