@@ -3,6 +3,10 @@
   --white: #fff;
 }
 
+body {
+  font-size: 1em;
+}
+
 section {
   display: flex;
   flex-flow: row wrap;
@@ -11,7 +15,7 @@ section {
 .box {
   box-sizing: border-box;
   width: 250px;
-  height: 120px;
+  height: 140px;
   margin-right: 0.5em;
   padding: 0.5em;
   border: 1px solid black;
@@ -59,10 +63,6 @@ p {
 
 .box8 {
   background-color: #cc0;
-}
-
-.box9 {
-  background-color: rgba(128, 0, 128, 0.6);
 }
 
 .box9 {

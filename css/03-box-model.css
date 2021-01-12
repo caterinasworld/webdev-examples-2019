@@ -1,14 +1,19 @@
+:root {
+  --white: white;
+  --purple: #663399;
+  --lavender: #b3b3e6;
+}
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
-  color: var(--gray1);
 }
 
 div {
   width: 40vw;
   height: 50vh;
   margin: 10px auto;
-  border: 10px dashed rgb(179, 179, 230);
+  border: 10px dashed var(--lavender);
   border-radius: 10px;
 
   /* Options for specifying the padding property */
@@ -20,8 +25,8 @@ div {
   /* padding: 20px; */
   padding: 20px 40px;
 
-  background-color: rebeccapurple;
-  color: #fefefe;
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 span {
