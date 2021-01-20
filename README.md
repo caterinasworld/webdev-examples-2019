@@ -5,6 +5,7 @@ This repository contains starter files and potential solutions to the class exam
 - HTML
 - Accessibility
 - CSS
+- Bootstrap
 - JavaScript
 - Node
 - Express
