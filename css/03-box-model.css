@@ -38,7 +38,7 @@ span {
 /* Box-sizing: content-box vs border-box */
 .border-box {
   display: none;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /* Size units: em vs rem */
