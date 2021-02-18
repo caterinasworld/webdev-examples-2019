@@ -1,32 +1,32 @@
 let destructureItems = (input) => {
-	// destructure the name and house(s) of the character and format the output as shown
+  // destructure the name and house(s) of the character and format the output as shown
 
-    let { first, last } = input;
-    let { mother, father } = input.allegiance.parents;
+  let { first, last } = input;
+  let { mother, father } = input.allegiance.parents;
 
-    let result = `${first} ${last}
+  let result = `${first} ${last}
     child of
-    ${mother} and ${father}`
+    ${mother} and ${father}`;
 
-	return result;
+  return result;
 };
 
 const character = {
-	first: "Sansa",
-	last: "Stark",
-	allegiance: {
-        house: "Winterfell",
-		parents: {
-			mother: "Catelyn Tully",
-			father: "Eddard Stark"
-		},
-		animals: {
-			direwolf: "Lady"
-		}
-	}
+  first: 'Sansa',
+  last: 'Stark',
+  allegiance: {
+    house: 'Winterfell',
+    parents: {
+      mother: 'Catelyn Tully',
+      father: 'Eddard Stark',
+    },
+    animals: {
+      direwolf: 'Lady',
+    },
+  },
 };
 
 console.log(destructureItems(character));
 // Sansa Stark
-//      child of 
-//      Catelyn Tully and Eddard Stark
+//   daughter of
+//   Catelyn Tully and Eddard Stark
