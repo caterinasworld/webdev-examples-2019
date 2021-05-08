@@ -16,6 +16,10 @@ h2 {
   color: var(--green);
 }
 
+.container {
+  margin-top: 4rem;
+}
+
 .text {
   margin-top: 0.5em;
   color: var(--grey);
